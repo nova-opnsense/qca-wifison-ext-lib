@@ -21,7 +21,7 @@
 #define MESSAGE_FRAME_LEN_MAX 4096
 #define VENDOR_DATA_LEN_MAX 1482
 
-#define log_debug() printf("[%s:%d] (%s): \r\n", __FILE__, __LINE__, __func__)
+#define log_debug() printf("\x1b[36m%s\x1b[0m \x1b[90m[%s:%d]\x1b[0m (%s): \r\n", "DEBUG", __FILE__, __LINE__, __func__)
 
 typedef enum
 {
